@@ -4,11 +4,13 @@ const filterEvenNumbers = (num: number[]): number[] => {
   return num.filter((val) => val % 2 === 0);
 };
 
+
 // ______ 2: reverseString  ______________________________
 
 const reverseString = (val: string): string => {
   return val.split("").reverse().join("");
 };
+
 
 // ______ 3: StringOrNumber   ______________________________
 
@@ -18,6 +20,7 @@ const checkType = (val: StringOrNumber): "String" | "Number" => {
   if (typeof val === "string") return "String";
   return "Number";
 };
+
 
 // ______ 4: getProperty    ______________________________
 
@@ -34,6 +37,7 @@ interface Book {
   author: string;
   publishedYear: number;
 }
+
 
 interface BookReadStatus extends Book {
   isRead: boolean;

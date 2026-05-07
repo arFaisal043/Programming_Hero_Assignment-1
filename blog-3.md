@@ -7,6 +7,20 @@ Generics give you power to build a functional component that work with so many t
 - any: It can loss all type checking.
 - We can write same function for every different type. So that here create so many duplicate code.
 
+## Basic Generic Interface Code:
+
+interface Box<T> {
+  value: T;
+  getValue(): T;
+}
+
+const stringBox: Box<string> = {
+  value: "hello",
+  getValue() { return this.value; }
+};
+console.log(stringBox);
+
+
 ## Why Generics Helps You to Solve Real World Problems:
 - Write just 1 function and reuse for every data types.
 - Get error in compile time.
